@@ -1,0 +1,5 @@
+#ignore DS_Store file, virtual environment
+.DS_Store
+Gymenv/
+docs/build/
+docs/source/_templates/

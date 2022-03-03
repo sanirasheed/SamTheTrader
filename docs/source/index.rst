@@ -12,6 +12,7 @@ Sam is an AI trader that uses deep reinforcement learning with behavioral clonin
    :maxdepth: 2
    :caption: Contents:
 
+   deep_learning
 
 
 Indices and tables

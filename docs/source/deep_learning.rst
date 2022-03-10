@@ -4,6 +4,14 @@
 
 .. _LibTorch (PyTorch): https://pytorch.org/
 
+.. _ here: https://cmake.org/install/
+
+.. _here: https://github.com/microsoft/vcpkg
+
+.. _here.: https://pytorch.org/
+
+.. _WSL (Version 2): https://docs.microsoft.com/en-us/windows/wsl/install
+
 .. role:: python(code)
   :language: python
   :class: highlight
@@ -19,7 +27,7 @@ Prerequisites
 
 `CMake`_
 ^^^^
-    CMake is used to build the system. A comprehensive installation guide can be found here. Alternatively,
+    CMake is used to build the system. A comprehensive installation guide can be found` here`_. Alternatively,
     paste the lines below into your terminal::
 
         wget https://github.com/Kitware/CMake/releases/download/v3.23.0-rc2/cmake-3.23.0-rc2.tar.gz
@@ -29,35 +37,37 @@ Prerequisites
         make
         make install
 
-    If any permission errors are encountered, try appending sudo in front of each command (e.g. sudo make instead of make).
+    If any permission errors are encountered, try appending :python:`sudo` in front of each command
+    (e.g. :python:`sudo make` instead of :python:`make`).
 
 `vcpkg`_
 ^^^^
-    vcpkg makes managing external libraries easy. A comprehensive installation guide can be found here. Alternatively,
+    vcpkg makes managing external libraries easy. A comprehensive installation guide can be found`here`_. Alternatively,
     paste the lines below into your terminal::
 
         cd ~
         git clone https://github.com/microsoft/vcpkg
         ./vcpkg/bootstrap-vcpkg.sh
-    If any permission errors are encountered, try appending sudo in front of each command (e.g. sudo make instead of
-    make)
+    If any permission errors are encountered, try appending :python:`sudo` in front of each command
+    (e.g. :python:`sudo make` instead of :python:`make`).
 
 `LibTorch (PyTorch)`_
 ^^^^
-    PyTorch provides deep learning functionality. A comprehensive installation guide can be found here. Alternatively,
+    PyTorch provides deep learning functionality. A comprehensive installation guide can be found `here.`_ Alternatively,
     paste the lines below into your terminal::
 
         cd ~
         wget https://download.pytorch.org/libtorch/nightly/cpu/libtorch-shared-with-deps-latest.zip
         unzip libtorch-shared-with-deps-latest.zip
-    If any permission errors are encountered, try appending :python:`sudo` in front of each command (e.g. sudo make
-    instead of make).
+    If any permission errors are encountered, try appending :python:`sudo` in front of each command
+    (e.g. :python:`sudo make` instead of :python:`make`).
 
 Setting up Deep Learning
 ^^^^
     Before getting started, it should be known that this library has been primarily tested and built in a Linux
-    environment, so directly building on a Windows system is inadvisable. If you are using Windows, it's best to use WSL
-    (Version 2).
+    environment, so directly building on a Windows system is inadvisable. If you are using Windows, it's best to use
+    `WSL (Version 2)`_.
+
     To begin, clone the repo and enter it::
 
         git clone https://github.com/ava6969/deep_learning.git

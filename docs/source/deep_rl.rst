@@ -2,20 +2,26 @@
 
 .. _CMake: https://cmake.org/
 
-.. _ here: https://cmake.org/install/
+.. _ here: https://cmake.org/
 
 .. _here: https://github.com/microsoft/vcpkg
 
+.. _here.: https://pytorch.org/
+
 .. _WSL (Version 2): https://docs.microsoft.com/en-us/windows/wsl/install
+
+.. _LibTorch (PyTorch): https://pytorch.org/
+
+.. _MobaXTerm: https://mobaxterm.mobatek.net/
 
 .. role:: python(code)
   :language: python
   :class: highlight
 
-Tuner
+deep_rl
 ####
 
-    This library provides hyperparameter tuning via configuration files.
+    A deep reinforcement learning framework.
 
 Prerequisites
 ****
@@ -31,7 +37,6 @@ Prerequisites
         ./bootstrap -- -DCMAKE_BUILD_TYPE:STRING=Release
         make
         make install
-
     If any permission errors are encountered, try appending :python:`sudo` in front of each command (e.g.
     :python:`sudo make` instead of :python:`make`).
 
@@ -46,15 +51,38 @@ Prerequisites
     If any permission errors are encountered, try appending :python:`sudo` in front of each command (e.g.
     :python:`sudo make` instead of :python:`make`).
 
-Setting up Tuner
+`LibTorch (PyTorch)`_
+^^^^
+    PyTorch provides deep learning functionality. A comprehensive installation guide can be found `here.`_ Alternatively,
+    paste the lines below into your terminal::
+
+        cd ~
+        wget https://download.pytorch.org/libtorch/nightly/cpu/libtorch-shared-with-deps-latest.zip
+        unzip libtorch-shared-with-deps-latest.zip
+    If any permission errors are encountered, try appending :python:`sudo` in front of each command (e.g.
+    :python:`sudo make` instead of :python:`make`).
+
+Subrepositories
+^^^^
+    The :python:`gym`, :python:`deep_learning`, and :python:`tuner` repositories need to be cloned into the home directory,
+    under a folder named :python:`sam`. This can be done with the instructions below::
+        cd ~
+        mkdir sam
+        cd sam
+        git clone https://github.com/ava6969/gym.git
+        git clone https://github.com/ava6969/deep_learning.git
+        git clone https://github.com/ava6969/tuner.git
+
+Setting up deep_rl
 ^^^^
     Before getting started, it should be known that this library has been primarily tested and built in a Linux
     environment, so directly building on a Windows system is inadvisable. If you are using Windows, it's best to use
-    `WSL (Version 2)`_.
+    `WSL (Version 2)`_, plus a XWindow package like `MobaXTerm`_.
+
     To begin, clone the repo and enter it::
 
-        git clone https://github.com/ava6969/tuner.git
-        cd tuner
+        git clone https://github.com/ava6969/deep_rl.git
+        cd deep_rl
     Install dependencies::
 
         ~/vcpkg/vcpkg install "@vcpkg_deps.txt"

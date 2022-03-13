@@ -3,20 +3,31 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Sam The Trader's documentation!
+Welcome to S.A.M documentation!
 ============================================
 Sam is an AI trader that uses deep reinforcement learning with behavioral cloning to trade different securities!
 
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 3
+   :caption: Gym:
 
+   Gym
 
+.. toctree::
+   :maxdepth: 3
+   :caption: Deep learning:
 
-Indices and tables
-==================
+   Deep learning
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. toctree::
+   :maxdepth: 3
+   :caption: Deep Reinforcement Learning:
+
+   Deep Reinforcement Learning
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Tuner:
+
+   Tuner

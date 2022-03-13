@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Sam The Trader'
+project = 'S.A.M'
 copyright = "2022, Sani Abdullah, Marcus D'Aguiar, Adedewe Adesola, Ben Giacalone"
 author = "Sani Abdullah, Marcus D'Aguiar, Adedewe Adesola, Ben Giacalone"
 
@@ -31,11 +31,11 @@ release = '0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx_copybutton'
 ]
-
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
-
+docutils = ['_docutils']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.

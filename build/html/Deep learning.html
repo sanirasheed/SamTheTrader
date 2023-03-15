@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deep Learning &mdash; S.A.M 0.1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Deep reinforcement learning" href="Deep%20Reinforcement%20Learning.html" />
+    <link rel="prev" title="Getting Started with Gym" href="Gym.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> S.A.M
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Gym:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Gym.html">Getting Started with Gym</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Gym.html#setting-up-gym">Setting up Gym</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Deep learning:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Deep Learning</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">CMake</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Vcpkg</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">LibTorch (PyTorch)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#setting-up-deep-learning">Setting up Deep Learning</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Deep Reinforcement Learning:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Deep%20Reinforcement%20Learning.html">Deep reinforcement learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Deep%20Reinforcement%20Learning.html#subrepositories">Subrepositories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Deep%20Reinforcement%20Learning.html#setting-up-deep-reinforcement-learning">Setting up Deep Reinforcement Learning</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tuner:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Tuner.html">Tuner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tuner.html#setting-up-tuner">Setting up Tuner</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">S.A.M</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Deep Learning</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Deep learning.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="deep-learning">
+<h1>Deep Learning<a class="headerlink" href="#deep-learning" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>This library provides C++-based deep learning modules for reinforcement learning,
+such as ResNet blocks, self attention layers, and variational autoencoders.</p>
+</div></blockquote>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3><a class="reference external" href="https://cmake.org/">CMake</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>CMake is used to build the system. A comprehensive installation guide can be found here. Alternatively,
+paste the lines below into your terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">Kitware</span><span class="o">/</span><span class="n">CMake</span><span class="o">/</span><span class="n">releases</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="n">v3</span><span class="o">.</span><span class="mf">23.0</span><span class="o">-</span><span class="n">rc2</span><span class="o">/</span><span class="n">cmake</span><span class="o">-</span><span class="mf">3.23</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="n">rc2</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="n">tar</span> <span class="o">-</span><span class="n">xf</span> <span class="n">cmake</span><span class="o">-</span><span class="mf">3.23</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="n">rc2</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="n">cd</span> <span class="n">cmake</span><span class="o">-</span><span class="mf">3.23</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="n">rc2</span>
+<span class="o">./</span><span class="n">bootstrap</span> <span class="o">--</span> <span class="o">-</span><span class="n">DCMAKE_BUILD_TYPE</span><span class="p">:</span><span class="n">STRING</span><span class="o">=</span><span class="n">Release</span>
+<span class="n">make</span>
+<span class="n">make</span> <span class="n">install</span>
+</pre></div>
+</div>
+<p>If any permission errors are encountered, try appending sudo in front of each command (e.g. sudo make instead of make).</p>
+</div></blockquote>
+</div>
+<div class="section" id="id2">
+<h3><a class="reference external" href="https://vcpkg.io/en/index.html">Vcpkg</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>vcpkg makes managing external libraries easy. A comprehensive installation guide can be found here. Alternatively,
+paste the lines below into your terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">microsoft</span><span class="o">/</span><span class="n">vcpkg</span>
+<span class="o">./</span><span class="n">vcpkg</span><span class="o">/</span><span class="n">bootstrap</span><span class="o">-</span><span class="n">vcpkg</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>If any permission errors are encountered, try appending sudo in front of each command (e.g. sudo make instead of
+make)</p>
+</div></blockquote>
+</div>
+<div class="section" id="id3">
+<h3><a class="reference external" href="https://pytorch.org/">LibTorch (PyTorch)</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>PyTorch provides deep learning functionality. A comprehensive installation guide can be found here. Alternatively,
+paste the lines below into your terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~</span>
+<span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">download</span><span class="o">.</span><span class="n">pytorch</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">libtorch</span><span class="o">/</span><span class="n">nightly</span><span class="o">/</span><span class="n">cpu</span><span class="o">/</span><span class="n">libtorch</span><span class="o">-</span><span class="n">shared</span><span class="o">-</span><span class="k">with</span><span class="o">-</span><span class="n">deps</span><span class="o">-</span><span class="n">latest</span><span class="o">.</span><span class="n">zip</span>
+<span class="n">unzip</span> <span class="n">libtorch</span><span class="o">-</span><span class="n">shared</span><span class="o">-</span><span class="k">with</span><span class="o">-</span><span class="n">deps</span><span class="o">-</span><span class="n">latest</span><span class="o">.</span><span class="n">zip</span>
+</pre></div>
+</div>
+<p>If any permission errors are encountered, try appending <code class="code highlight python docutils literal notranslate"><span class="n"><span class="pre">sudo</span></span></code> in front of each command (e.g. sudo make
+instead of make).</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="setting-up-deep-learning">
+<h1>Setting up Deep Learning<a class="headerlink" href="#setting-up-deep-learning" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>Before getting started, it should be known that this library has been primarily tested and built in a Linux
+environment, so directly building on a Windows system is inadvisable. If you are using Windows, it’s best to use WSL
+(Version 2).
+To begin, clone the repo and enter it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ava6969</span><span class="o">/</span><span class="n">deep_learning</span><span class="o">.</span><span class="n">git</span>
+<span class="n">cd</span> <span class="n">deep_learning</span>
+</pre></div>
+</div>
+<p>Install dependencies:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">~/</span><span class="n">vcpkg</span><span class="o">/</span><span class="n">vcpkg</span> <span class="n">install</span> <span class="s2">&quot;@vcpkg_deps.txt&quot;</span>
+</pre></div>
+</div>
+<p>Build the library:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">Torch_DIR</span><span class="o">=~/</span>
+<span class="n">mkdir</span> <span class="n">cmake</span><span class="o">-</span><span class="n">build</span><span class="o">-</span><span class="n">debug</span>
+<span class="n">cd</span> <span class="n">cmake</span><span class="o">-</span><span class="n">build</span><span class="o">-</span><span class="n">debug</span>
+<span class="n">cmake</span> <span class="o">-</span><span class="n">DCMAKE_C_COMPILER</span><span class="o">=</span><span class="n">gcc</span> <span class="o">-</span><span class="n">DCMAKE_CXX_COMPILER</span><span class="o">=</span><span class="n">g</span><span class="o">++</span> <span class="o">-</span><span class="n">DCMAKE_MAKE_PROGRAM</span><span class="o">=</span><span class="n">make</span> <span class="o">..</span>
+<span class="n">cmake</span> <span class="o">--</span><span class="n">build</span> <span class="o">.</span>
+</pre></div>
+</div>
+<p>And you’re done!</p>
+</div></blockquote>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Gym.html" class="btn btn-neutral float-left" title="Getting Started with Gym" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Deep%20Reinforcement%20Learning.html" class="btn btn-neutral float-right" title="Deep reinforcement learning" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Sani Abdullah, Marcus D&#39;Aguiar, Adedewe Adesola, Ben Giacalone.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

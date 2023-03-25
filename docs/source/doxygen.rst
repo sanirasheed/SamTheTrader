@@ -1,6 +1,6 @@
 .. doxygenindex::
-   :project: MyProject
-   :version: 1.0
+   :project: S.A.M
+   :version: 0.1
    :repo: https://github.com/sanirasheed/SamTheTrader
    :path: ../doxygenXML/
    :maxdepth: 2

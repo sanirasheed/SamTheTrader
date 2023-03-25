@@ -34,9 +34,9 @@ release = '0.1'
 extensions = ["sphinx_copybutton","breathe"]
 
 breathe_projects = {
-    "myproject": "../docs/doxygenXML/",
+    "S.A.M": "../docs/doxygenXML/",
 }
-breathe_default_project = "myproject"
+breathe_default_project = "S.A.M"
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

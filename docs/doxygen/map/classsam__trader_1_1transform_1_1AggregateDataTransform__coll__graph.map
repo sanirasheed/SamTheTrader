@@ -1,0 +1,4 @@
+<map id="sam_trader::transform::AggregateDataTransform" name="sam_trader::transform::AggregateDataTransform">
+<area shape="rect" id="node1" title="Class for aggregating financial data by a desired time span." alt="" coords="5,95,199,136"/>
+<area shape="rect" id="node2" href="$structsam__trader_1_1transform_1_1DataTransform.html" title="An abstract base class representing a data transform operation." alt="" coords="18,5,186,47"/>
+</map>

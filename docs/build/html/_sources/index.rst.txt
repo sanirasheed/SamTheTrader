@@ -9,25 +9,31 @@ Sam is an AI trader that uses deep reinforcement learning with behavioral clonin
 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Gym:
 
    Gym
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Deep learning:
 
    Deep learning
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Deep Reinforcement Learning:
 
    Deep Reinforcement Learning
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Tuner:
 
    Tuner
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Doxygen Documentation:
+
+   doxygen

@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacesam__trader_1_1transform" kind="namespace" language="C++">
+    <compoundname>sam_trader::transform</compoundname>
+    <innerclass refid="classsam__trader_1_1transform_1_1AggregateDataTransform" prot="public">sam_trader::transform::AggregateDataTransform</innerclass>
+    <innerclass refid="structsam__trader_1_1transform_1_1DataTransform" prot="public">sam_trader::transform::DataTransform</innerclass>
+    <innerclass refid="structsam__trader_1_1transform_1_1FibRetracementModel" prot="public">sam_trader::transform::FibRetracementModel</innerclass>
+    <innerclass refid="structsam__trader_1_1transform_1_1RegistryWrapper" prot="public">sam_trader::transform::RegistryWrapper</innerclass>
+    <innerclass refid="structsam__trader_1_1transform_1_1Registry" prot="public">sam_trader::transform::Registry</innerclass>
+    <innerclass refid="classsam__trader_1_1transform_1_1TAModel" prot="public">sam_trader::transform::TAModel</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="data__transform_8h_1a18a7bbf3d8a6fc863cbcbe8f26c17be7" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="structsam__trader_1_1transform_1_1DataTransform_1a05e09f3b043dcfb8baf977b32b627e4a" kindref="member">DataTransform::Ptr</ref> &gt;</type>
+        <definition>using sam_trader::transform::DataTransformList = typedef std::vector&lt;DataTransform::Ptr&gt;</definition>
+        <argsstring></argsstring>
+        <name>DataTransformList</name>
+        <briefdescription>
+<para>A vector of <ref refid="structsam__trader_1_1transform_1_1DataTransform_1a05e09f3b043dcfb8baf977b32b627e4a" kindref="member">DataTransform::Ptr</ref> objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/data_transform.h" line="64" column="1" bodyfile="sam/trading_sim/cpp/src/transforms/data_transform.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="registry_8h_1a4236224a1365416ccfbbe9a9007fe68f" prot="public" static="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>using sam_trader::transform::Args = typedef std::vector&lt;double&gt;</definition>
+        <argsstring></argsstring>
+        <name>Args</name>
+        <briefdescription>
+<para>A type alias for the arguments of a transformation function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/registry.h" line="18" column="1" bodyfile="sam/trading_sim/cpp/src/transforms/registry.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="registry_8h_1a195743913cd58d3906e0ffd472c27263" prot="public" static="no">
+        <type>std::function&lt; std::unique_ptr&lt; <ref refid="structsam__trader_1_1transform_1_1DataTransform" kindref="compound">DataTransform</ref> &gt;(BarColumns, <ref refid="registry_8h_1a4236224a1365416ccfbbe9a9007fe68f" kindref="member">Args</ref> const  &amp;)&gt;</type>
+        <definition>using sam_trader::transform::FunctionInterface = typedef std::function&lt;std::unique_ptr&lt;DataTransform&gt;(BarColumns, Args const&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>FunctionInterface</name>
+        <briefdescription>
+<para>A type alias for the function interface of a transformation function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/registry.h" line="23" column="1" bodyfile="sam/trading_sim/cpp/src/transforms/registry.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="registry_8h_1a32387a4825c5348798e2c4825c25864b" prot="public" static="yes" mutable="no">
+        <type><ref refid="structsam__trader_1_1transform_1_1Registry" kindref="compound">Registry</ref></type>
+        <definition>Registry sam_trader::transform::transformRegistry</definition>
+        <argsstring></argsstring>
+        <name>transformRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/registry.h" line="65" column="17" bodyfile="sam/trading_sim/cpp/src/transforms/registry.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ta__model_8h_1a4db1f069c94e1a0d3a3d213b7dfab64b" prot="public" static="no" mutable="no">
+        <type>const std::set&lt; std::string &gt;</type>
+        <definition>const std::set&lt;std::string&gt; sam_trader::transform::ALL_TI</definition>
+        <argsstring></argsstring>
+        <name>ALL_TI</name>
+        <initializer>= extractNames()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/ta_model.h" line="30" column="16" bodyfile="sam/trading_sim/cpp/src/transforms/ta_model.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ta__model_8cpp_1ac03fc26ff75a4dda445a2a0a6e745f5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::set&lt; std::string &gt;</type>
+        <definition>std::set&lt; std::string &gt; sam_trader::transform::extractNames</definition>
+        <argsstring>()</argsstring>
+        <name>extractNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>@Extracts the names of all the Technical Indicators. <simplesect kind="return"><para>A set containing the names of all the Technical Indicators. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/ta_model.cpp" line="12" column="10" bodyfile="sam/trading_sim/cpp/src/transforms/ta_model.cpp" bodystart="12" bodyend="20" declfile="sam/trading_sim/cpp/src/transforms/ta_model.h" declline="28" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="ta__model_8cpp_1a9ebd3f9c92d68f046ac5e743eb41a398" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; sam_trader::transform::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, TAModel const &amp;model)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="classsam__trader_1_1transform_1_1TAModel" kindref="compound">TAModel</ref> const &amp;</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>@Overloads the &lt;&lt; operator to output the name of the technical indicator.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An output stream instance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>taModel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <ref refid="classsam__trader_1_1transform_1_1TAModel" kindref="compound">TAModel</ref> instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An output stream instance. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/ta_model.cpp" line="233" column="1" bodyfile="sam/trading_sim/cpp/src/transforms/ta_model.cpp" bodystart="233" bodyend="270"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="sam/trading_sim/cpp/src/transforms/aggregates.cpp" line="8" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="aggregates_8h" kind="file" language="C++">
+    <compoundname>aggregates.h</compoundname>
+    <includes local="yes">../common/timespan.h</includes>
+    <includes refid="data__transform_8h" local="yes">data_transform.h</includes>
+    <includes local="yes">pandas_arrow.h</includes>
+    <includedby refid="aggregates_8cpp" local="yes">sam/trading_sim/cpp/src/transforms/aggregates.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>sam/trading_sim/cpp/src/transforms/aggregates.h</label>
+        <link refid="aggregates_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../common/timespan.h</label>
+      </node>
+      <node id="3">
+        <label>data_transform.h</label>
+        <link refid="data__transform_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>pandas_arrow.h</label>
+      </node>
+      <node id="4">
+        <label>common/namespace.h</label>
+      </node>
+      <node id="5">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classsam__trader_1_1transform_1_1AggregateDataTransform" prot="public">sam_trader::transform::AggregateDataTransform</innerclass>
+    <innerclass refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar" prot="public">sam_trader::transform::AggregateDataTransform::Bar</innerclass>
+    <innernamespace refid="namespacesam__trader">sam_trader</innernamespace>
+    <innernamespace refid="namespacesam__trader_1_1transform">sam_trader::transform</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>dewe<sp/>on<sp/>1/9/23.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../common/timespan.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="data__transform_8h" kindref="compound">data_transform.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pandas_arrow.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">sam_trader::transform<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classsam__trader_1_1transform_1_1AggregateDataTransform" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsam__trader_1_1transform_1_1AggregateDataTransform" kindref="compound">AggregateDataTransform</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="structsam__trader_1_1transform_1_1DataTransform" kindref="compound">DataTransform</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar" kindref="compound">Bar</ref></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>open{};<sp/></highlight></codeline>
+<codeline lineno="30" refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1abb0bf88e0272bc052ab73428d17b4ead" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1abb0bf88e0272bc052ab73428d17b4ead" kindref="member">high</ref>{<sp/>-std::numeric_limits&lt;double&gt;::infinity()<sp/>};<sp/></highlight></codeline>
+<codeline lineno="31" refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1a0c30cdb82c23ed0edf225c90a8e817cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1a0c30cdb82c23ed0edf225c90a8e817cf" kindref="member">low</ref>{<sp/>std::numeric_limits&lt;double&gt;::infinity()<sp/>};<sp/></highlight></codeline>
+<codeline lineno="32" refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1a6cbd5dcb38061bc9da8bca8356c2f7b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1a6cbd5dcb38061bc9da8bca8356c2f7b9" kindref="member">close</ref>{};<sp/></highlight></codeline>
+<codeline lineno="33" refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1a5c63d8c7d780f0f6f00d73e6c2d7e410" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1a5c63d8c7d780f0f6f00d73e6c2d7e410" kindref="member">volume</ref>{};<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1a49f61d06f9890a9050fa8bd0e68ae3ef" kindref="member">AggregateDataTransform</ref>(BarColumns,<sp/>sam_trader::TimeSpan<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>base,<sp/>sam_trader::TimeSpan<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>desired);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>pd::DataFrame<sp/><ref refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1a26b11bb03b799e27c4061326e3fc6bc0" kindref="member">transform</ref>(pd::DataFrame<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1adb2ee600db0917f835689a779de66dea" kindref="member">getOutputNames</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>pd::DataFrame<sp/><ref refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1a5bc766ef0ec9f653a89ae256877fc022" kindref="member">aggregateByDay</ref>(pd::DataFrame<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>bar)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>pd::DataFrame<sp/><ref refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1a4f34aa8c676252cee1dd6c977a5dbf95" kindref="member">aggregateByMinute</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pd::DataFrame&amp;<sp/>df)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>sam_trader::TimeSpan<sp/>desiredTimeSpan;<sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>sam_trader::TimeSpan<sp/>baseTimeSpan;<sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sam_trader::transform</highlight></codeline>
+    </programlisting>
+    <location file="sam/trading_sim/cpp/src/transforms/aggregates.h"/>
+  </compounddef>
+</doxygen>

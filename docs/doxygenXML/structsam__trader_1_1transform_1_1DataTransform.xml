@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structsam__trader_1_1transform_1_1DataTransform" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>sam_trader::transform::DataTransform</compoundname>
+    <derivedcompoundref refid="classsam__trader_1_1transform_1_1AggregateDataTransform" prot="public" virt="non-virtual">sam_trader::transform::AggregateDataTransform</derivedcompoundref>
+    <derivedcompoundref refid="structsam__trader_1_1transform_1_1FibRetracementModel" prot="public" virt="non-virtual">sam_trader::transform::FibRetracementModel</derivedcompoundref>
+    <derivedcompoundref refid="classsam__trader_1_1transform_1_1TAModel" prot="public" virt="non-virtual">sam_trader::transform::TAModel</derivedcompoundref>
+    <includes refid="data__transform_8h" local="no">data_transform.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structsam__trader_1_1transform_1_1DataTransform_1a05e09f3b043dcfb8baf977b32b627e4a" prot="public" static="no">
+        <type>std::unique_ptr&lt; <ref refid="structsam__trader_1_1transform_1_1DataTransform" kindref="compound">DataTransform</ref> &gt;</type>
+        <definition>using sam_trader::transform::DataTransform::Ptr =  std::unique_ptr&lt;DataTransform&gt;</definition>
+        <argsstring></argsstring>
+        <name>Ptr</name>
+        <briefdescription>
+<para>A unique pointer to a <ref refid="structsam__trader_1_1transform_1_1DataTransform" kindref="compound">DataTransform</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/data_transform.h" line="54" column="5" bodyfile="sam/trading_sim/cpp/src/transforms/data_transform.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="structsam__trader_1_1transform_1_1DataTransform_1a9f616e26fa8dfe547146cf949cf30f88" prot="protected" static="no" mutable="no">
+        <type>BarColumns</type>
+        <definition>BarColumns sam_trader::transform::DataTransform::m_barColumns</definition>
+        <argsstring></argsstring>
+        <name>m_barColumns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/data_transform.h" line="57" column="16" bodyfile="sam/trading_sim/cpp/src/transforms/data_transform.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsam__trader_1_1transform_1_1DataTransform_1a478246831af2243abdf72dfa571c20ae" prot="protected" static="no" mutable="no">
+        <type>ColumnPrefix</type>
+        <definition>ColumnPrefix sam_trader::transform::DataTransform::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/data_transform.h" line="58" column="18" bodyfile="sam/trading_sim/cpp/src/transforms/data_transform.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structsam__trader_1_1transform_1_1DataTransform_1afd9e66336e4540df559defb09edc666c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sam_trader::transform::DataTransform::DataTransform</definition>
+        <argsstring>(BarColumns prices, ColumnPrefix config)</argsstring>
+        <name>DataTransform</name>
+        <param>
+          <type>BarColumns</type>
+          <declname>prices</declname>
+        </param>
+        <param>
+          <type>ColumnPrefix</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="structsam__trader_1_1transform_1_1DataTransform" kindref="compound">DataTransform</ref> object with the given BarColumns and ColumnPrefix. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The BarColumns to use for the transform. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ColumnPrefix for the transform. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/data_transform.h" line="29" column="5" bodyfile="sam/trading_sim/cpp/src/transforms/data_transform.h" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="structsam__trader_1_1transform_1_1DataTransform_1a6ac28c25740d6b48f4ec1088058f15b2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>pd::DataFrame</type>
+        <definition>virtual pd::DataFrame sam_trader::transform::DataTransform::transform</definition>
+        <argsstring>(pd::DataFrame const &amp;) const =0</argsstring>
+        <name>transform</name>
+        <reimplementedby refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1a26b11bb03b799e27c4061326e3fc6bc0">transform</reimplementedby>
+        <reimplementedby refid="structsam__trader_1_1transform_1_1FibRetracementModel_1a6442f5aa13506cd9416e6950af48e922">transform</reimplementedby>
+        <reimplementedby refid="classsam__trader_1_1transform_1_1TAModel_1a2f7fcd5d57433ecb41cfb9ebb88e900d">transform</reimplementedby>
+        <param>
+          <type>pd::DataFrame const &amp;</type>
+        </param>
+        <briefdescription>
+<para>Transforms the input DataFrame and returns the transformed DataFrame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The DataFrame to transform. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The transformed DataFrame. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/data_transform.h" line="38" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="structsam__trader_1_1transform_1_1DataTransform_1af128f95200252af338b4b304b535107f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>virtual std::vector&lt;std::string&gt; sam_trader::transform::DataTransform::getOutputNames</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getOutputNames</name>
+        <reimplementedby refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1adb2ee600db0917f835689a779de66dea">getOutputNames</reimplementedby>
+        <reimplementedby refid="structsam__trader_1_1transform_1_1FibRetracementModel_1a1853af4b43239fb3c9ab5a354af35a47">getOutputNames</reimplementedby>
+        <reimplementedby refid="classsam__trader_1_1transform_1_1TAModel_1a68339d0d4ffb50eaad54127b29a95baa">getOutputNames</reimplementedby>
+        <briefdescription>
+<para>Returns the output names of the transform. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The output names of the transform. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/data_transform.h" line="44" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="structsam__trader_1_1transform_1_1DataTransform_1a9eeabb1e26852814513a52bf1490fe06" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual sam_trader::transform::DataTransform::~DataTransform</definition>
+        <argsstring>()=default</argsstring>
+        <name>~DataTransform</name>
+        <briefdescription>
+<para>Virtual destructor for the <ref refid="structsam__trader_1_1transform_1_1DataTransform" kindref="compound">DataTransform</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/data_transform.h" line="49" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An abstract base class representing a data transform operation. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>sam_trader::transform::AggregateDataTransform</label>
+        <link refid="classsam__trader_1_1transform_1_1AggregateDataTransform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sam_trader::transform::DataTransform</label>
+        <link refid="structsam__trader_1_1transform_1_1DataTransform"/>
+      </node>
+      <node id="3">
+        <label>sam_trader::transform::FibRetracementModel</label>
+        <link refid="structsam__trader_1_1transform_1_1FibRetracementModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sam_trader::transform::TAModel</label>
+        <link refid="classsam__trader_1_1transform_1_1TAModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="sam/trading_sim/cpp/src/transforms/data_transform.h" line="21" column="1" bodyfile="sam/trading_sim/cpp/src/transforms/data_transform.h" bodystart="22" bodyend="59"/>
+    <listofallmembers>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1a478246831af2243abdf72dfa571c20ae" prot="protected" virt="non-virtual"><scope>sam_trader::transform::DataTransform</scope><name>config</name></member>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1afd9e66336e4540df559defb09edc666c" prot="public" virt="non-virtual"><scope>sam_trader::transform::DataTransform</scope><name>DataTransform</name></member>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1af128f95200252af338b4b304b535107f" prot="public" virt="pure-virtual"><scope>sam_trader::transform::DataTransform</scope><name>getOutputNames</name></member>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1a9f616e26fa8dfe547146cf949cf30f88" prot="protected" virt="non-virtual"><scope>sam_trader::transform::DataTransform</scope><name>m_barColumns</name></member>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1a05e09f3b043dcfb8baf977b32b627e4a" prot="public" virt="non-virtual"><scope>sam_trader::transform::DataTransform</scope><name>Ptr</name></member>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1a6ac28c25740d6b48f4ec1088058f15b2" prot="public" virt="pure-virtual"><scope>sam_trader::transform::DataTransform</scope><name>transform</name></member>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1a9eeabb1e26852814513a52bf1490fe06" prot="public" virt="virtual"><scope>sam_trader::transform::DataTransform</scope><name>~DataTransform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="classsam__trader_1_1transform_1_1AggregateDataTransform" kind="class"><name>sam_trader::transform::AggregateDataTransform</name>
+    <member refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1a1925a5d95cdbb85f0aa293580ca4373f" kind="variable"><name>desiredTimeSpan</name></member>
+    <member refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1a29b4ee0b6664cbd6c355ca80f9fbbe4c" kind="variable"><name>baseTimeSpan</name></member>
+    <member refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1a49f61d06f9890a9050fa8bd0e68ae3ef" kind="function"><name>AggregateDataTransform</name></member>
+    <member refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1a26b11bb03b799e27c4061326e3fc6bc0" kind="function"><name>transform</name></member>
+    <member refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1adb2ee600db0917f835689a779de66dea" kind="function"><name>getOutputNames</name></member>
+    <member refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1a5bc766ef0ec9f653a89ae256877fc022" kind="function"><name>aggregateByDay</name></member>
+    <member refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1a4f34aa8c676252cee1dd6c977a5dbf95" kind="function"><name>aggregateByMinute</name></member>
+  </compound>
+  <compound refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar" kind="struct"><name>sam_trader::transform::AggregateDataTransform::Bar</name>
+    <member refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1a3849f79bc202bc51aa44b07fa45fa2d1" kind="variable"><name>open</name></member>
+    <member refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1abb0bf88e0272bc052ab73428d17b4ead" kind="variable"><name>high</name></member>
+    <member refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1a0c30cdb82c23ed0edf225c90a8e817cf" kind="variable"><name>low</name></member>
+    <member refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1a6cbd5dcb38061bc9da8bca8356c2f7b9" kind="variable"><name>close</name></member>
+    <member refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1a5c63d8c7d780f0f6f00d73e6c2d7e410" kind="variable"><name>volume</name></member>
+  </compound>
+  <compound refid="structsam__trader_1_1transform_1_1DataTransform" kind="struct"><name>sam_trader::transform::DataTransform</name>
+    <member refid="structsam__trader_1_1transform_1_1DataTransform_1a05e09f3b043dcfb8baf977b32b627e4a" kind="typedef"><name>Ptr</name></member>
+    <member refid="structsam__trader_1_1transform_1_1DataTransform_1a9f616e26fa8dfe547146cf949cf30f88" kind="variable"><name>m_barColumns</name></member>
+    <member refid="structsam__trader_1_1transform_1_1DataTransform_1a478246831af2243abdf72dfa571c20ae" kind="variable"><name>config</name></member>
+    <member refid="structsam__trader_1_1transform_1_1DataTransform_1afd9e66336e4540df559defb09edc666c" kind="function"><name>DataTransform</name></member>
+    <member refid="structsam__trader_1_1transform_1_1DataTransform_1a6ac28c25740d6b48f4ec1088058f15b2" kind="function"><name>transform</name></member>
+    <member refid="structsam__trader_1_1transform_1_1DataTransform_1af128f95200252af338b4b304b535107f" kind="function"><name>getOutputNames</name></member>
+    <member refid="structsam__trader_1_1transform_1_1DataTransform_1a9eeabb1e26852814513a52bf1490fe06" kind="function"><name>~DataTransform</name></member>
+  </compound>
+  <compound refid="structsam__trader_1_1transform_1_1FibRetracementModel" kind="struct"><name>sam_trader::transform::FibRetracementModel</name>
+    <member refid="structsam__trader_1_1transform_1_1FibRetracementModel_1a8581af41b8a71a16bccbb07fb2295f03" kind="variable"><name>fibRatios</name></member>
+    <member refid="structsam__trader_1_1transform_1_1FibRetracementModel_1a5e2adc01692576281ce893b607b8b951" kind="variable"><name>fibColors</name></member>
+    <member refid="structsam__trader_1_1transform_1_1FibRetracementModel_1afd889cb9afd050d26de5d931ae2ab9a7" kind="variable"><name>depth</name></member>
+    <member refid="structsam__trader_1_1transform_1_1FibRetracementModel_1a6120d7e0a8167d7a18269dec36ffd932" kind="function"><name>FibRetracementModel</name></member>
+    <member refid="structsam__trader_1_1transform_1_1FibRetracementModel_1a1853af4b43239fb3c9ab5a354af35a47" kind="function"><name>getOutputNames</name></member>
+    <member refid="structsam__trader_1_1transform_1_1FibRetracementModel_1a6442f5aa13506cd9416e6950af48e922" kind="function"><name>transform</name></member>
+  </compound>
+  <compound refid="structsam__trader_1_1transform_1_1Registry" kind="struct"><name>sam_trader::transform::Registry</name>
+    <member refid="structsam__trader_1_1transform_1_1Registry_1a3a521921e3e3e5494bd912eca64dc057" kind="variable"><name>impl</name></member>
+    <member refid="structsam__trader_1_1transform_1_1Registry_1afd69ee409f69f5649a636bd87129fa1f" kind="function"><name>registerTransform</name></member>
+    <member refid="structsam__trader_1_1transform_1_1Registry_1ad55d367c20dfeaa7211bc823ffa8f763" kind="function"><name>get</name></member>
+  </compound>
+  <compound refid="structsam__trader_1_1transform_1_1RegistryWrapper" kind="struct"><name>sam_trader::transform::RegistryWrapper</name>
+    <member refid="structsam__trader_1_1transform_1_1RegistryWrapper_1aea3fca8d3a0d0d6e41954d9b544da990" kind="variable"><name>registry</name></member>
+  </compound>
+  <compound refid="classsam__trader_1_1transform_1_1TAModel" kind="class"><name>sam_trader::transform::TAModel</name>
+    <member refid="classsam__trader_1_1transform_1_1TAModel_1a7e7f01d7df50c3c98f18d57cd4eb9994" kind="variable"><name>info</name></member>
+    <member refid="classsam__trader_1_1transform_1_1TAModel_1a4b3beb6735da1989ff0f6a7ef2444965" kind="variable"><name>options</name></member>
+    <member refid="classsam__trader_1_1transform_1_1TAModel_1abaf1f19388bfac7ecc9d79df10e51a88" kind="variable"><name>inputs</name></member>
+    <member refid="classsam__trader_1_1transform_1_1TAModel_1aa62bcafc816822ba49c9a88bfe2630ed" kind="variable"><name>outputs</name></member>
+    <member refid="classsam__trader_1_1transform_1_1TAModel_1a71a3545ac7796a365f141df51fb4b408" kind="variable"><name>tiIndicatorsDefaults</name></member>
+    <member refid="classsam__trader_1_1transform_1_1TAModel_1ad32433ba0c34b15dea98d262fd815cd7" kind="variable"><name>lazyInitFlag</name></member>
+    <member refid="classsam__trader_1_1transform_1_1TAModel_1a6a5e159ebadacba6267fe9e859d0e629" kind="function"><name>TAModel</name></member>
+    <member refid="classsam__trader_1_1transform_1_1TAModel_1a68339d0d4ffb50eaad54127b29a95baa" kind="function"><name>getOutputNames</name></member>
+    <member refid="classsam__trader_1_1transform_1_1TAModel_1a610ae900f5d57db3919804f1a25757fe" kind="function"><name>~TAModel</name></member>
+    <member refid="classsam__trader_1_1transform_1_1TAModel_1ae5d19b0d7c1c4beb376a117447108af0" kind="function"><name>makeOutput</name></member>
+    <member refid="classsam__trader_1_1transform_1_1TAModel_1a4c75ac2bd2b93f2f7d4b5f4b14b26c5c" kind="function"><name>unzip</name></member>
+    <member refid="classsam__trader_1_1transform_1_1TAModel_1a2f7fcd5d57433ecb41cfb9ebb88e900d" kind="function"><name>transform</name></member>
+    <member refid="classsam__trader_1_1transform_1_1TAModel_1abfeb54f843186bae354172b62a2f009b" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="classsam__trader_1_1transform_1_1TAModel_1a52367bce8426c3f9b6cfb28246444aa8" kind="function"><name>initializeDefaults</name></member>
+    <member refid="classsam__trader_1_1transform_1_1TAModel_1a1f35a0ca80259782b3f3f8f584c6d178" kind="function"><name>getDefaultsPath</name></member>
+  </compound>
+  <compound refid="namespacepd" kind="namespace"><name>pd</name>
+  </compound>
+  <compound refid="namespacesam__trader" kind="namespace"><name>sam_trader</name>
+  </compound>
+  <compound refid="namespacesam__trader_1_1transform" kind="namespace"><name>sam_trader::transform</name>
+    <member refid="data__transform_8h_1a18a7bbf3d8a6fc863cbcbe8f26c17be7" kind="typedef"><name>DataTransformList</name></member>
+    <member refid="registry_8h_1a4236224a1365416ccfbbe9a9007fe68f" kind="typedef"><name>Args</name></member>
+    <member refid="registry_8h_1a195743913cd58d3906e0ffd472c27263" kind="typedef"><name>FunctionInterface</name></member>
+    <member refid="registry_8h_1a32387a4825c5348798e2c4825c25864b" kind="variable"><name>transformRegistry</name></member>
+    <member refid="ta__model_8h_1a4db1f069c94e1a0d3a3d213b7dfab64b" kind="variable"><name>ALL_TI</name></member>
+    <member refid="ta__model_8cpp_1ac03fc26ff75a4dda445a2a0a6e745f5f" kind="function"><name>extractNames</name></member>
+    <member refid="ta__model_8cpp_1a9ebd3f9c92d68f046ac5e743eb41a398" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="namespacestd_1_1string__literals" kind="namespace"><name>std::string_literals</name>
+  </compound>
+  <compound refid="aggregates_8cpp" kind="file"><name>aggregates.cpp</name>
+  </compound>
+  <compound refid="aggregates_8h" kind="file"><name>aggregates.h</name>
+  </compound>
+  <compound refid="data__transform_8h" kind="file"><name>data_transform.h</name>
+  </compound>
+  <compound refid="fib__retrace_8cpp" kind="file"><name>fib_retrace.cpp</name>
+  </compound>
+  <compound refid="fib__retrace_8h" kind="file"><name>fib_retrace.h</name>
+  </compound>
+  <compound refid="registry_8h" kind="file"><name>registry.h</name>
+    <member refid="registry_8h_1aea2eaf0cf949965cb7885c8edf3a5d5e" kind="define"><name>REGISTER_TRANSFORM</name></member>
+  </compound>
+  <compound refid="ta__model_8cpp" kind="file"><name>ta_model.cpp</name>
+  </compound>
+  <compound refid="ta__model_8h" kind="file"><name>ta_model.h</name>
+  </compound>
+  <compound refid="dir_716835fcd7c240634bf3582267f1610c" kind="dir"><name>sam/trading_sim/cpp</name>
+  </compound>
+  <compound refid="dir_350e5e81508b0a4b1302cfb4d524a74e" kind="dir"><name>sam</name>
+  </compound>
+  <compound refid="dir_ea1a56472866cc82efd235813f9b9268" kind="dir"><name>sam/trading_sim/cpp/src</name>
+  </compound>
+  <compound refid="dir_85bf509bf1524f15b59bf30c7f2495aa" kind="dir"><name>sam/trading_sim</name>
+  </compound>
+  <compound refid="dir_4938c76eb39b3bb0a10a9160b5831a37" kind="dir"><name>sam/trading_sim/cpp/src/transforms</name>
+  </compound>
+</doxygenindex>

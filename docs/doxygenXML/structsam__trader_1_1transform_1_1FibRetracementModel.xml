@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structsam__trader_1_1transform_1_1FibRetracementModel" kind="struct" language="C++" prot="public">
+    <compoundname>sam_trader::transform::FibRetracementModel</compoundname>
+    <basecompoundref refid="structsam__trader_1_1transform_1_1DataTransform" prot="public" virt="non-virtual">sam_trader::transform::DataTransform</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structsam__trader_1_1transform_1_1FibRetracementModel_1a8581af41b8a71a16bccbb07fb2295f03" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr std::array</type>
+        <definition>constexpr std::array sam_trader::transform::FibRetracementModel::fibRatios</definition>
+        <argsstring></argsstring>
+        <name>fibRatios</name>
+        <initializer>{ 0.f, 0.236f, 0.382f, 0.500f, 0.618f, 0.764f, 1.00f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/fib_retrace.h" line="56" column="33" bodyfile="sam/trading_sim/cpp/src/transforms/fib_retrace.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsam__trader_1_1transform_1_1FibRetracementModel_1a5e2adc01692576281ce893b607b8b951" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr std::array</type>
+        <definition>constexpr std::array sam_trader::transform::FibRetracementModel::fibColors</definition>
+        <argsstring></argsstring>
+        <name>fibColors</name>
+        <initializer>{
+        &quot;#787b86&quot;, &quot;#f44336&quot;, &quot;#81c784&quot;, &quot;#4caf50&quot;, &quot;#009688&quot;, &quot;#64b5f6&quot;, &quot;#787b86&quot;,
+        
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/fib_retrace.h" line="58" column="33" bodyfile="sam/trading_sim/cpp/src/transforms/fib_retrace.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsam__trader_1_1transform_1_1FibRetracementModel_1afd889cb9afd050d26de5d931ae2ab9a7" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t sam_trader::transform::FibRetracementModel::depth</definition>
+        <argsstring></argsstring>
+        <name>depth</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/fib_retrace.h" line="63" column="13" bodyfile="sam/trading_sim/cpp/src/transforms/fib_retrace.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structsam__trader_1_1transform_1_1FibRetracementModel_1a6120d7e0a8167d7a18269dec36ffd932" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sam_trader::transform::FibRetracementModel::FibRetracementModel</definition>
+        <argsstring>(BarColumns priceNames, Args const &amp;args)</argsstring>
+        <name>FibRetracementModel</name>
+        <param>
+          <type>BarColumns</type>
+          <declname>priceNames</declname>
+        </param>
+        <param>
+          <type><ref refid="registry_8h_1a4236224a1365416ccfbbe9a9007fe68f" kindref="member">Args</ref> const &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new instance of the <ref refid="structsam__trader_1_1transform_1_1FibRetracementModel" kindref="compound">FibRetracementModel</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>priceNames</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The column names of the prices. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The arguments for the <ref refid="structsam__trader_1_1transform_1_1FibRetracementModel" kindref="compound">FibRetracementModel</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/fib_retrace.h" line="31" column="14" bodyfile="sam/trading_sim/cpp/src/transforms/fib_retrace.h" bodystart="31" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="structsam__trader_1_1transform_1_1FibRetracementModel_1a1853af4b43239fb3c9ab5a354af35a47" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sam_trader::transform::FibRetracementModel::getOutputNames</definition>
+        <argsstring>() const override</argsstring>
+        <name>getOutputNames</name>
+        <reimplements refid="structsam__trader_1_1transform_1_1DataTransform_1af128f95200252af338b4b304b535107f">getOutputNames</reimplements>
+        <briefdescription>
+<para>Gets the names of the output columns. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The names of the output columns. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/fib_retrace.h" line="47" column="17" bodyfile="sam/trading_sim/cpp/src/transforms/fib_retrace.cpp" bodystart="114" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="structsam__trader_1_1transform_1_1FibRetracementModel_1a6442f5aa13506cd9416e6950af48e922" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>pd::DataFrame</type>
+        <definition>pd::DataFrame sam_trader::transform::FibRetracementModel::transform</definition>
+        <argsstring>(pd::DataFrame const &amp;bars) const override</argsstring>
+        <name>transform</name>
+        <reimplements refid="structsam__trader_1_1transform_1_1DataTransform_1a6ac28c25740d6b48f4ec1088058f15b2">transform</reimplements>
+        <param>
+          <type>pd::DataFrame const &amp;</type>
+          <declname>bars</declname>
+        </param>
+        <briefdescription>
+<para>Transforms the given bars data using the Fibonacci retracement model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bars data to be transformed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The transformed bars data. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/fib_retrace.h" line="54" column="19" bodyfile="sam/trading_sim/cpp/src/transforms/fib_retrace.cpp" bodystart="11" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>sam_trader::transform::DataTransform</label>
+        <link refid="structsam__trader_1_1transform_1_1DataTransform"/>
+      </node>
+      <node id="1">
+        <label>sam_trader::transform::FibRetracementModel</label>
+        <link refid="structsam__trader_1_1transform_1_1FibRetracementModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>sam_trader::transform::DataTransform</label>
+        <link refid="structsam__trader_1_1transform_1_1DataTransform"/>
+      </node>
+      <node id="1">
+        <label>sam_trader::transform::FibRetracementModel</label>
+        <link refid="structsam__trader_1_1transform_1_1FibRetracementModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="sam/trading_sim/cpp/src/transforms/fib_retrace.h" line="21" column="1" bodyfile="sam/trading_sim/cpp/src/transforms/fib_retrace.h" bodystart="22" bodyend="64"/>
+    <listofallmembers>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1a478246831af2243abdf72dfa571c20ae" prot="protected" virt="non-virtual"><scope>sam_trader::transform::FibRetracementModel</scope><name>config</name></member>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1afd9e66336e4540df559defb09edc666c" prot="public" virt="non-virtual"><scope>sam_trader::transform::FibRetracementModel</scope><name>DataTransform</name></member>
+      <member refid="structsam__trader_1_1transform_1_1FibRetracementModel_1afd889cb9afd050d26de5d931ae2ab9a7" prot="public" virt="non-virtual"><scope>sam_trader::transform::FibRetracementModel</scope><name>depth</name></member>
+      <member refid="structsam__trader_1_1transform_1_1FibRetracementModel_1a5e2adc01692576281ce893b607b8b951" prot="public" virt="non-virtual"><scope>sam_trader::transform::FibRetracementModel</scope><name>fibColors</name></member>
+      <member refid="structsam__trader_1_1transform_1_1FibRetracementModel_1a8581af41b8a71a16bccbb07fb2295f03" prot="public" virt="non-virtual"><scope>sam_trader::transform::FibRetracementModel</scope><name>fibRatios</name></member>
+      <member refid="structsam__trader_1_1transform_1_1FibRetracementModel_1a6120d7e0a8167d7a18269dec36ffd932" prot="public" virt="non-virtual"><scope>sam_trader::transform::FibRetracementModel</scope><name>FibRetracementModel</name></member>
+      <member refid="structsam__trader_1_1transform_1_1FibRetracementModel_1a1853af4b43239fb3c9ab5a354af35a47" prot="public" virt="virtual"><scope>sam_trader::transform::FibRetracementModel</scope><name>getOutputNames</name></member>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1a9f616e26fa8dfe547146cf949cf30f88" prot="protected" virt="non-virtual"><scope>sam_trader::transform::FibRetracementModel</scope><name>m_barColumns</name></member>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1a05e09f3b043dcfb8baf977b32b627e4a" prot="public" virt="non-virtual"><scope>sam_trader::transform::FibRetracementModel</scope><name>Ptr</name></member>
+      <member refid="structsam__trader_1_1transform_1_1FibRetracementModel_1a6442f5aa13506cd9416e6950af48e922" prot="public" virt="virtual"><scope>sam_trader::transform::FibRetracementModel</scope><name>transform</name></member>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1a9eeabb1e26852814513a52bf1490fe06" prot="public" virt="virtual"><scope>sam_trader::transform::FibRetracementModel</scope><name>~DataTransform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

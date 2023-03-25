@@ -1,0 +1,426 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsam__trader_1_1transform_1_1TAModel" kind="class" language="C++" prot="public">
+    <compoundname>sam_trader::transform::TAModel</compoundname>
+    <basecompoundref refid="structsam__trader_1_1transform_1_1DataTransform" prot="public" virt="non-virtual">sam_trader::transform::DataTransform</basecompoundref>
+    <includes refid="ta__model_8h" local="no">ta_model.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classsam__trader_1_1transform_1_1TAModel_1a7e7f01d7df50c3c98f18d57cd4eb9994" prot="protected" static="no" mutable="no">
+        <type>const ti_indicator_info *</type>
+        <definition>const ti_indicator_info* sam_trader::transform::TAModel::info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/ta_model.h" line="111" column="29" bodyfile="sam/trading_sim/cpp/src/transforms/ta_model.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsam__trader_1_1transform_1_1TAModel_1a4b3beb6735da1989ff0f6a7ef2444965" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; sam_trader::transform::TAModel::options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/ta_model.h" line="112" column="17" bodyfile="sam/trading_sim/cpp/src/transforms/ta_model.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsam__trader_1_1transform_1_1TAModel_1abaf1f19388bfac7ecc9d79df10e51a88" prot="protected" static="no" mutable="yes">
+        <type>std::vector&lt; const double * &gt;</type>
+        <definition>std::vector&lt;const double*&gt; sam_trader::transform::TAModel::inputs</definition>
+        <argsstring></argsstring>
+        <name>inputs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/ta_model.h" line="113" column="25" bodyfile="sam/trading_sim/cpp/src/transforms/ta_model.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsam__trader_1_1transform_1_1TAModel_1aa62bcafc816822ba49c9a88bfe2630ed" prot="protected" static="no" mutable="yes">
+        <type>std::vector&lt; double * &gt;</type>
+        <definition>std::vector&lt;double*&gt; sam_trader::transform::TAModel::outputs</definition>
+        <argsstring></argsstring>
+        <name>outputs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/ta_model.h" line="114" column="25" bodyfile="sam/trading_sim/cpp/src/transforms/ta_model.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classsam__trader_1_1transform_1_1TAModel_1a71a3545ac7796a365f141df51fb4b408" prot="protected" static="yes" mutable="no">
+        <type>std::unordered_map&lt; std::string, std::vector&lt; double &gt; &gt;</type>
+        <definition>std::unordered_map&lt;std::string, std::vector&lt;double&gt; &gt; sam_trader::transform::TAModel::tiIndicatorsDefaults</definition>
+        <argsstring></argsstring>
+        <name>tiIndicatorsDefaults</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/ta_model.h" line="116" column="38" bodyfile="sam/trading_sim/cpp/src/transforms/ta_model.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsam__trader_1_1transform_1_1TAModel_1ad32433ba0c34b15dea98d262fd815cd7" prot="protected" static="yes" mutable="no">
+        <type>std::once_flag</type>
+        <definition>std::once_flag sam_trader::transform::TAModel::lazyInitFlag</definition>
+        <argsstring></argsstring>
+        <name>lazyInitFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/ta_model.h" line="117" column="34" bodyfile="sam/trading_sim/cpp/src/transforms/ta_model.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsam__trader_1_1transform_1_1TAModel_1a6a5e159ebadacba6267fe9e859d0e629" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sam_trader::transform::TAModel::TAModel</definition>
+        <argsstring>(BarColumns barColumns, ColumnPrefix columnPrefix, std::string const &amp;name, std::vector&lt; double &gt; _options={})</argsstring>
+        <name>TAModel</name>
+        <param>
+          <type>BarColumns</type>
+          <declname>barColumns</declname>
+        </param>
+        <param>
+          <type>ColumnPrefix</type>
+          <declname>columnPrefix</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>_options</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>@Constructs a new <ref refid="classsam__trader_1_1transform_1_1TAModel" kindref="compound">TAModel</ref> instance. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>barColumns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A BarColumns instance containing the column names of the OHLCV data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>columnPrefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The prefix to be used in the names of the columns generated by the technical indicator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the technical indicator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of doubles containing the options of the technical indicator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/ta_model.h" line="47" column="5" bodyfile="sam/trading_sim/cpp/src/transforms/ta_model.cpp" bodystart="22" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classsam__trader_1_1transform_1_1TAModel_1a68339d0d4ffb50eaad54127b29a95baa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sam_trader::transform::TAModel::getOutputNames</definition>
+        <argsstring>() const override</argsstring>
+        <name>getOutputNames</name>
+        <reimplements refid="structsam__trader_1_1transform_1_1DataTransform_1af128f95200252af338b4b304b535107f">getOutputNames</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>@Returns a vector of strings containing the names of the columns generated by the technical indicator.</para>
+<para><simplesect kind="return"><para>A vector of strings containing the names of the columns generated by the technical indicator. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/ta_model.h" line="58" column="17" bodyfile="sam/trading_sim/cpp/src/transforms/ta_model.cpp" bodystart="76" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classsam__trader_1_1transform_1_1TAModel_1a610ae900f5d57db3919804f1a25757fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sam_trader::transform::TAModel::~TAModel</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~TAModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/ta_model.h" line="60" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classsam__trader_1_1transform_1_1TAModel_1ae5d19b0d7c1c4beb376a117447108af0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::unordered_map&lt; std::string, std::vector&lt; double &gt; &gt;</type>
+        <definition>std::unordered_map&lt; std::string, std::vector&lt; double &gt; &gt; sam_trader::transform::TAModel::makeOutput</definition>
+        <argsstring>(pd::DataFrame const &amp;bars, std::vector&lt; std::string &gt; const &amp;output_names) const</argsstring>
+        <name>makeOutput</name>
+        <param>
+          <type>pd::DataFrame const &amp;</type>
+          <declname>bars</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>output_names</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>@Constructs a map of vectors of doubles containing the outputs generated by the technical indicator.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A DataFrame instance containing the OHLCV data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of strings containing the names of the columns generated by the technical indicator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A map of vectors of doubles containing the outputs generated by the technical indicator. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/ta_model.h" line="69" column="24" bodyfile="sam/trading_sim/cpp/src/transforms/ta_model.cpp" bodystart="160" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classsam__trader_1_1transform_1_1TAModel_1a4c75ac2bd2b93f2f7d4b5f4b14b26c5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::tuple&lt; std::unordered_map&lt; std::string, std::vector&lt; double &gt; &gt;, int64_t, std::shared_ptr&lt; arrow::Array &gt; &gt;</type>
+        <definition>std::tuple&lt; std::unordered_map&lt; std::string, std::vector&lt; double &gt; &gt;, int64_t, std::shared_ptr&lt; arrow::Array &gt; &gt; sam_trader::transform::TAModel::unzip</definition>
+        <argsstring>(ColumnPrefix const &amp;columnPrefix, pd::DataFrame const &amp;bars) const</argsstring>
+        <name>unzip</name>
+        <param>
+          <type>ColumnPrefix const &amp;</type>
+          <declname>columnPrefix</declname>
+        </param>
+        <param>
+          <type>pd::DataFrame const &amp;</type>
+          <declname>bars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>@Unzips a DataFrame instance into a tuple containing a map of vectors of doubles containing the outputs generated by the technical indicator, an int64_t value, and a shared_ptr to an Array instance.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>columnPrefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The prefix to be used in the names of the columns generated by the technical indicator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A DataFrame instance containing the OHLCV data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A tuple containing a map of vectors of doubles containing the outputs generated by the technical indicator, an int64_t value, and a shared_ptr to an Array instance. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/ta_model.h" line="82" column="16" bodyfile="sam/trading_sim/cpp/src/transforms/ta_model.cpp" bodystart="173" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classsam__trader_1_1transform_1_1TAModel_1a2f7fcd5d57433ecb41cfb9ebb88e900d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>pd::DataFrame</type>
+        <definition>pd::DataFrame sam_trader::transform::TAModel::transform</definition>
+        <argsstring>(pd::DataFrame const &amp;bars) const override</argsstring>
+        <name>transform</name>
+        <reimplements refid="structsam__trader_1_1transform_1_1DataTransform_1a6ac28c25740d6b48f4ec1088058f15b2">transform</reimplements>
+        <param>
+          <type>pd::DataFrame const &amp;</type>
+          <declname>bars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>@Applies the technical indicator on the OHLCV data contained in a DataFrame instance.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A DataFrame instance containing the OHLCV data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A DataFrame instance containing the OHLCV data and the columns generated by the technical indicator. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/ta_model.h" line="101" column="19" bodyfile="sam/trading_sim/cpp/src/transforms/ta_model.cpp" bodystart="189" bodyend="231"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classsam__trader_1_1transform_1_1TAModel_1abfeb54f843186bae354172b62a2f009b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, TAModel const &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <defname>os</defname>
+        </param>
+        <param>
+          <type><ref refid="classsam__trader_1_1transform_1_1TAModel" kindref="compound">TAModel</ref> const &amp;</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>@Overloads the &lt;&lt; operator to output the name of the technical indicator.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An output stream instance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>taModel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <ref refid="classsam__trader_1_1transform_1_1TAModel" kindref="compound">TAModel</ref> instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An output stream instance. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/ta_model.h" line="93" column="12" bodyfile="sam/trading_sim/cpp/src/transforms/ta_model.cpp" bodystart="233" bodyend="270"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsam__trader_1_1transform_1_1TAModel_1a52367bce8426c3f9b6cfb28246444aa8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sam_trader::transform::TAModel::initializeDefaults</definition>
+        <argsstring>()</argsstring>
+        <name>initializeDefaults</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/ta_model.h" line="103" column="17" bodyfile="sam/trading_sim/cpp/src/transforms/ta_model.cpp" bodystart="86" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classsam__trader_1_1transform_1_1TAModel_1a1f35a0ca80259782b3f3f8f584c6d178" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto sam_trader::transform::TAModel::getDefaultsPath</definition>
+        <argsstring>()</argsstring>
+        <name>getDefaultsPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/ta_model.h" line="105" column="24" bodyfile="sam/trading_sim/cpp/src/transforms/ta_model.h" bodystart="105" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>@A class that extends the <ref refid="structsam__trader_1_1transform_1_1DataTransform" kindref="compound">DataTransform</ref> class, and is used to apply technical indicators on OHLCV data. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>sam_trader::transform::DataTransform</label>
+        <link refid="structsam__trader_1_1transform_1_1DataTransform"/>
+      </node>
+      <node id="1">
+        <label>sam_trader::transform::TAModel</label>
+        <link refid="classsam__trader_1_1transform_1_1TAModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>sam_trader::transform::DataTransform</label>
+        <link refid="structsam__trader_1_1transform_1_1DataTransform"/>
+      </node>
+      <node id="1">
+        <label>sam_trader::transform::TAModel</label>
+        <link refid="classsam__trader_1_1transform_1_1TAModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="sam/trading_sim/cpp/src/transforms/ta_model.h" line="35" column="1" bodyfile="sam/trading_sim/cpp/src/transforms/ta_model.h" bodystart="36" bodyend="118"/>
+    <listofallmembers>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1a478246831af2243abdf72dfa571c20ae" prot="protected" virt="non-virtual"><scope>sam_trader::transform::TAModel</scope><name>config</name></member>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1afd9e66336e4540df559defb09edc666c" prot="public" virt="non-virtual"><scope>sam_trader::transform::TAModel</scope><name>DataTransform</name></member>
+      <member refid="classsam__trader_1_1transform_1_1TAModel_1a1f35a0ca80259782b3f3f8f584c6d178" prot="public" virt="non-virtual"><scope>sam_trader::transform::TAModel</scope><name>getDefaultsPath</name></member>
+      <member refid="classsam__trader_1_1transform_1_1TAModel_1a68339d0d4ffb50eaad54127b29a95baa" prot="public" virt="virtual"><scope>sam_trader::transform::TAModel</scope><name>getOutputNames</name></member>
+      <member refid="classsam__trader_1_1transform_1_1TAModel_1a7e7f01d7df50c3c98f18d57cd4eb9994" prot="protected" virt="non-virtual"><scope>sam_trader::transform::TAModel</scope><name>info</name></member>
+      <member refid="classsam__trader_1_1transform_1_1TAModel_1a52367bce8426c3f9b6cfb28246444aa8" prot="public" virt="non-virtual"><scope>sam_trader::transform::TAModel</scope><name>initializeDefaults</name></member>
+      <member refid="classsam__trader_1_1transform_1_1TAModel_1abaf1f19388bfac7ecc9d79df10e51a88" prot="protected" virt="non-virtual"><scope>sam_trader::transform::TAModel</scope><name>inputs</name></member>
+      <member refid="classsam__trader_1_1transform_1_1TAModel_1ad32433ba0c34b15dea98d262fd815cd7" prot="protected" virt="non-virtual"><scope>sam_trader::transform::TAModel</scope><name>lazyInitFlag</name></member>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1a9f616e26fa8dfe547146cf949cf30f88" prot="protected" virt="non-virtual"><scope>sam_trader::transform::TAModel</scope><name>m_barColumns</name></member>
+      <member refid="classsam__trader_1_1transform_1_1TAModel_1ae5d19b0d7c1c4beb376a117447108af0" prot="public" virt="non-virtual"><scope>sam_trader::transform::TAModel</scope><name>makeOutput</name></member>
+      <member refid="classsam__trader_1_1transform_1_1TAModel_1abfeb54f843186bae354172b62a2f009b" prot="public" virt="non-virtual"><scope>sam_trader::transform::TAModel</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classsam__trader_1_1transform_1_1TAModel_1a4b3beb6735da1989ff0f6a7ef2444965" prot="protected" virt="non-virtual"><scope>sam_trader::transform::TAModel</scope><name>options</name></member>
+      <member refid="classsam__trader_1_1transform_1_1TAModel_1aa62bcafc816822ba49c9a88bfe2630ed" prot="protected" virt="non-virtual"><scope>sam_trader::transform::TAModel</scope><name>outputs</name></member>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1a05e09f3b043dcfb8baf977b32b627e4a" prot="public" virt="non-virtual"><scope>sam_trader::transform::TAModel</scope><name>Ptr</name></member>
+      <member refid="classsam__trader_1_1transform_1_1TAModel_1a6a5e159ebadacba6267fe9e859d0e629" prot="public" virt="non-virtual"><scope>sam_trader::transform::TAModel</scope><name>TAModel</name></member>
+      <member refid="classsam__trader_1_1transform_1_1TAModel_1a71a3545ac7796a365f141df51fb4b408" prot="protected" virt="non-virtual"><scope>sam_trader::transform::TAModel</scope><name>tiIndicatorsDefaults</name></member>
+      <member refid="classsam__trader_1_1transform_1_1TAModel_1a2f7fcd5d57433ecb41cfb9ebb88e900d" prot="public" virt="virtual"><scope>sam_trader::transform::TAModel</scope><name>transform</name></member>
+      <member refid="classsam__trader_1_1transform_1_1TAModel_1a4c75ac2bd2b93f2f7d4b5f4b14b26c5c" prot="public" virt="non-virtual"><scope>sam_trader::transform::TAModel</scope><name>unzip</name></member>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1a9eeabb1e26852814513a52bf1490fe06" prot="public" virt="virtual"><scope>sam_trader::transform::TAModel</scope><name>~DataTransform</name></member>
+      <member refid="classsam__trader_1_1transform_1_1TAModel_1a610ae900f5d57db3919804f1a25757fe" prot="public" virt="non-virtual"><scope>sam_trader::transform::TAModel</scope><name>~TAModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsam__trader_1_1transform_1_1AggregateDataTransform" kind="class" language="C++" prot="public">
+    <compoundname>sam_trader::transform::AggregateDataTransform</compoundname>
+    <basecompoundref refid="structsam__trader_1_1transform_1_1DataTransform" prot="public" virt="non-virtual">sam_trader::transform::DataTransform</basecompoundref>
+    <includes refid="aggregates_8h" local="no">aggregates.h</includes>
+    <innerclass refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar" prot="public">sam_trader::transform::AggregateDataTransform::Bar</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsam__trader_1_1transform_1_1AggregateDataTransform_1a1925a5d95cdbb85f0aa293580ca4373f" prot="private" static="no" mutable="no">
+        <type>sam_trader::TimeSpan</type>
+        <definition>sam_trader::TimeSpan sam_trader::transform::AggregateDataTransform::desiredTimeSpan</definition>
+        <argsstring></argsstring>
+        <name>desiredTimeSpan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/aggregates.h" line="72" column="26" bodyfile="sam/trading_sim/cpp/src/transforms/aggregates.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsam__trader_1_1transform_1_1AggregateDataTransform_1a29b4ee0b6664cbd6c355ca80f9fbbe4c" prot="private" static="no" mutable="no">
+        <type>sam_trader::TimeSpan</type>
+        <definition>sam_trader::TimeSpan sam_trader::transform::AggregateDataTransform::baseTimeSpan</definition>
+        <argsstring></argsstring>
+        <name>baseTimeSpan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The desired time span for aggregation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/aggregates.h" line="73" column="26" bodyfile="sam/trading_sim/cpp/src/transforms/aggregates.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsam__trader_1_1transform_1_1AggregateDataTransform_1a49f61d06f9890a9050fa8bd0e68ae3ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sam_trader::transform::AggregateDataTransform::AggregateDataTransform</definition>
+        <argsstring>(BarColumns, sam_trader::TimeSpan const &amp;base, sam_trader::TimeSpan const &amp;desired)</argsstring>
+        <name>AggregateDataTransform</name>
+        <param>
+          <type>BarColumns</type>
+          <defname>columns</defname>
+        </param>
+        <param>
+          <type>sam_trader::TimeSpan const &amp;</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>sam_trader::TimeSpan const &amp;</type>
+          <declname>desired</declname>
+        </param>
+        <briefdescription>
+<para>Constructs an <ref refid="classsam__trader_1_1transform_1_1AggregateDataTransform" kindref="compound">AggregateDataTransform</ref> instance with the given parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>barColumns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The columns containing financial bar data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base time span for the financial data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>desired</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired time span for aggregation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/aggregates.h" line="42" column="5" bodyfile="sam/trading_sim/cpp/src/transforms/aggregates.cpp" bodystart="10" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classsam__trader_1_1transform_1_1AggregateDataTransform_1a26b11bb03b799e27c4061326e3fc6bc0" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>pd::DataFrame</type>
+        <definition>pd::DataFrame sam_trader::transform::AggregateDataTransform::transform</definition>
+        <argsstring>(pd::DataFrame const &amp;) const final</argsstring>
+        <name>transform</name>
+        <reimplements refid="structsam__trader_1_1transform_1_1DataTransform_1a6ac28c25740d6b48f4ec1088058f15b2">transform</reimplements>
+        <param>
+          <type>pd::DataFrame const &amp;</type>
+          <defname>bar</defname>
+        </param>
+        <briefdescription>
+<para>Transforms the given financial data by aggregating it at the desired time span. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The financial data to transform. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The transformed financial data. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/aggregates.h" line="49" column="19" bodyfile="sam/trading_sim/cpp/src/transforms/aggregates.cpp" bodystart="27" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classsam__trader_1_1transform_1_1AggregateDataTransform_1adb2ee600db0917f835689a779de66dea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; sam_trader::transform::AggregateDataTransform::getOutputNames</definition>
+        <argsstring>() const override</argsstring>
+        <name>getOutputNames</name>
+        <reimplements refid="structsam__trader_1_1transform_1_1DataTransform_1af128f95200252af338b4b304b535107f">getOutputNames</reimplements>
+        <briefdescription>
+<para>Gets the output names of the transformed financial data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The output names of the transformed financial data. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/aggregates.h" line="55" column="17" bodyfile="sam/trading_sim/cpp/src/transforms/aggregates.cpp" bodystart="44" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classsam__trader_1_1transform_1_1AggregateDataTransform_1a5bc766ef0ec9f653a89ae256877fc022" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>pd::DataFrame</type>
+        <definition>pd::DataFrame sam_trader::transform::AggregateDataTransform::aggregateByDay</definition>
+        <argsstring>(pd::DataFrame const &amp;bar) const</argsstring>
+        <name>aggregateByDay</name>
+        <param>
+          <type>pd::DataFrame const &amp;</type>
+          <declname>bar</declname>
+        </param>
+        <briefdescription>
+<para>Aggregates the given financial data by day. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The financial data to aggregate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The aggregated financial data. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/aggregates.h" line="62" column="19" bodyfile="sam/trading_sim/cpp/src/transforms/aggregates.cpp" bodystart="131" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classsam__trader_1_1transform_1_1AggregateDataTransform_1a4f34aa8c676252cee1dd6c977a5dbf95" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>pd::DataFrame</type>
+        <definition>pd::DataFrame sam_trader::transform::AggregateDataTransform::aggregateByMinute</definition>
+        <argsstring>(const pd::DataFrame &amp;df) const</argsstring>
+        <name>aggregateByMinute</name>
+        <param>
+          <type>const pd::DataFrame &amp;</type>
+          <declname>df</declname>
+        </param>
+        <briefdescription>
+<para>Aggregates the given financial data by minute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>df</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The financial data to aggregate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The aggregated financial data. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/aggregates.h" line="69" column="19" bodyfile="sam/trading_sim/cpp/src/transforms/aggregates.cpp" bodystart="53" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for aggregating financial data by a desired time span. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>sam_trader::transform::AggregateDataTransform</label>
+        <link refid="classsam__trader_1_1transform_1_1AggregateDataTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sam_trader::transform::DataTransform</label>
+        <link refid="structsam__trader_1_1transform_1_1DataTransform"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>sam_trader::transform::AggregateDataTransform</label>
+        <link refid="classsam__trader_1_1transform_1_1AggregateDataTransform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sam_trader::transform::DataTransform</label>
+        <link refid="structsam__trader_1_1transform_1_1DataTransform"/>
+      </node>
+    </collaborationgraph>
+    <location file="sam/trading_sim/cpp/src/transforms/aggregates.h" line="20" column="1" bodyfile="sam/trading_sim/cpp/src/transforms/aggregates.h" bodystart="21" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1a5bc766ef0ec9f653a89ae256877fc022" prot="public" virt="non-virtual"><scope>sam_trader::transform::AggregateDataTransform</scope><name>aggregateByDay</name></member>
+      <member refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1a4f34aa8c676252cee1dd6c977a5dbf95" prot="public" virt="non-virtual"><scope>sam_trader::transform::AggregateDataTransform</scope><name>aggregateByMinute</name></member>
+      <member refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1a49f61d06f9890a9050fa8bd0e68ae3ef" prot="public" virt="non-virtual"><scope>sam_trader::transform::AggregateDataTransform</scope><name>AggregateDataTransform</name></member>
+      <member refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1a29b4ee0b6664cbd6c355ca80f9fbbe4c" prot="private" virt="non-virtual"><scope>sam_trader::transform::AggregateDataTransform</scope><name>baseTimeSpan</name></member>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1a478246831af2243abdf72dfa571c20ae" prot="protected" virt="non-virtual"><scope>sam_trader::transform::AggregateDataTransform</scope><name>config</name></member>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1afd9e66336e4540df559defb09edc666c" prot="public" virt="non-virtual"><scope>sam_trader::transform::AggregateDataTransform</scope><name>DataTransform</name></member>
+      <member refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1a1925a5d95cdbb85f0aa293580ca4373f" prot="private" virt="non-virtual"><scope>sam_trader::transform::AggregateDataTransform</scope><name>desiredTimeSpan</name></member>
+      <member refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1adb2ee600db0917f835689a779de66dea" prot="public" virt="virtual"><scope>sam_trader::transform::AggregateDataTransform</scope><name>getOutputNames</name></member>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1a9f616e26fa8dfe547146cf949cf30f88" prot="protected" virt="non-virtual"><scope>sam_trader::transform::AggregateDataTransform</scope><name>m_barColumns</name></member>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1a05e09f3b043dcfb8baf977b32b627e4a" prot="public" virt="non-virtual"><scope>sam_trader::transform::AggregateDataTransform</scope><name>Ptr</name></member>
+      <member refid="classsam__trader_1_1transform_1_1AggregateDataTransform_1a26b11bb03b799e27c4061326e3fc6bc0" prot="public" virt="virtual"><scope>sam_trader::transform::AggregateDataTransform</scope><name>transform</name></member>
+      <member refid="structsam__trader_1_1transform_1_1DataTransform_1a9eeabb1e26852814513a52bf1490fe06" prot="public" virt="virtual"><scope>sam_trader::transform::AggregateDataTransform</scope><name>~DataTransform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

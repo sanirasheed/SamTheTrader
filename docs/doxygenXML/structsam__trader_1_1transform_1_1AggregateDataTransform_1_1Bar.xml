@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar" kind="struct" language="C++" prot="public">
+    <compoundname>sam_trader::transform::AggregateDataTransform::Bar</compoundname>
+    <includes refid="aggregates_8h" local="no">aggregates.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1a3849f79bc202bc51aa44b07fa45fa2d1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double sam_trader::transform::AggregateDataTransform::Bar::open</definition>
+        <argsstring></argsstring>
+        <name>open</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/aggregates.h" line="29" column="16" bodyfile="sam/trading_sim/cpp/src/transforms/aggregates.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1abb0bf88e0272bc052ab73428d17b4ead" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double sam_trader::transform::AggregateDataTransform::Bar::high</definition>
+        <argsstring></argsstring>
+        <name>high</name>
+        <initializer>{ -std::numeric_limits&lt;double&gt;::infinity() }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Opening price of the bar. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/aggregates.h" line="30" column="24" bodyfile="sam/trading_sim/cpp/src/transforms/aggregates.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1a0c30cdb82c23ed0edf225c90a8e817cf" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double sam_trader::transform::AggregateDataTransform::Bar::low</definition>
+        <argsstring></argsstring>
+        <name>low</name>
+        <initializer>{ std::numeric_limits&lt;double&gt;::infinity() }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Highest price of the bar. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/aggregates.h" line="31" column="24" bodyfile="sam/trading_sim/cpp/src/transforms/aggregates.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1a6cbd5dcb38061bc9da8bca8356c2f7b9" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double sam_trader::transform::AggregateDataTransform::Bar::close</definition>
+        <argsstring></argsstring>
+        <name>close</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Lowest price of the bar. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/aggregates.h" line="32" column="24" bodyfile="sam/trading_sim/cpp/src/transforms/aggregates.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1a5c63d8c7d780f0f6f00d73e6c2d7e410" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double sam_trader::transform::AggregateDataTransform::Bar::volume</definition>
+        <argsstring></argsstring>
+        <name>volume</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Closing price of the bar. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/aggregates.h" line="33" column="24" bodyfile="sam/trading_sim/cpp/src/transforms/aggregates.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct representing a financial bar. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="sam/trading_sim/cpp/src/transforms/aggregates.h" line="27" column="5" bodyfile="sam/trading_sim/cpp/src/transforms/aggregates.h" bodystart="28" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1a6cbd5dcb38061bc9da8bca8356c2f7b9" prot="public" virt="non-virtual"><scope>sam_trader::transform::AggregateDataTransform::Bar</scope><name>close</name></member>
+      <member refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1abb0bf88e0272bc052ab73428d17b4ead" prot="public" virt="non-virtual"><scope>sam_trader::transform::AggregateDataTransform::Bar</scope><name>high</name></member>
+      <member refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1a0c30cdb82c23ed0edf225c90a8e817cf" prot="public" virt="non-virtual"><scope>sam_trader::transform::AggregateDataTransform::Bar</scope><name>low</name></member>
+      <member refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1a3849f79bc202bc51aa44b07fa45fa2d1" prot="public" virt="non-virtual"><scope>sam_trader::transform::AggregateDataTransform::Bar</scope><name>open</name></member>
+      <member refid="structsam__trader_1_1transform_1_1AggregateDataTransform_1_1Bar_1a5c63d8c7d780f0f6f00d73e6c2d7e410" prot="public" virt="non-virtual"><scope>sam_trader::transform::AggregateDataTransform::Bar</scope><name>volume</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

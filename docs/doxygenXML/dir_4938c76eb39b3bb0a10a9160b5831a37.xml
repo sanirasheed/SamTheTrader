@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_4938c76eb39b3bb0a10a9160b5831a37" kind="dir">
+    <compoundname>sam/trading_sim/cpp/src/transforms</compoundname>
+    <innerfile refid="aggregates_8cpp">aggregates.cpp</innerfile>
+    <innerfile refid="aggregates_8h">aggregates.h</innerfile>
+    <innerfile refid="data__transform_8h">data_transform.h</innerfile>
+    <innerfile refid="fib__retrace_8cpp">fib_retrace.cpp</innerfile>
+    <innerfile refid="fib__retrace_8h">fib_retrace.h</innerfile>
+    <innerfile refid="registry_8h">registry.h</innerfile>
+    <innerfile refid="ta__model_8cpp">ta_model.cpp</innerfile>
+    <innerfile refid="ta__model_8h">ta_model.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="sam/trading_sim/cpp/src/transforms/"/>
+  </compounddef>
+</doxygen>

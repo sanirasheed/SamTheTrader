@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structsam__trader_1_1transform_1_1RegistryWrapper" kind="struct" language="C++" prot="public">
+    <compoundname>sam_trader::transform::RegistryWrapper</compoundname>
+    <includes refid="registry_8h" local="no">registry.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structsam__trader_1_1transform_1_1RegistryWrapper_1aea3fca8d3a0d0d6e41954d9b544da990" prot="public" static="yes" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="registry_8h_1a195743913cd58d3906e0ffd472c27263" kindref="member">FunctionInterface</ref> &gt;</type>
+        <definition>std::unordered_map&lt;std::string, FunctionInterface&gt; sam_trader::transform::RegistryWrapper::registry</definition>
+        <argsstring></argsstring>
+        <name>registry</name>
+        <briefdescription>
+<para>Registers a transformation function with the registry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the transformation function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transformation function. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The status of the registration. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sam/trading_sim/cpp/src/transforms/registry.h" line="36" column="38" bodyfile="sam/trading_sim/cpp/src/transforms/registry.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A struct to wrap the registry for transformation functions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="sam/trading_sim/cpp/src/transforms/registry.h" line="28" column="1" bodyfile="sam/trading_sim/cpp/src/transforms/registry.h" bodystart="29" bodyend="37"/>
+    <listofallmembers>
+      <member refid="structsam__trader_1_1transform_1_1RegistryWrapper_1aea3fca8d3a0d0d6e41954d9b544da990" prot="public" virt="non-virtual"><scope>sam_trader::transform::RegistryWrapper</scope><name>registry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_85bf509bf1524f15b59bf30c7f2495aa" kind="dir">
+    <compoundname>sam/trading_sim</compoundname>
+    <innerdir refid="dir_716835fcd7c240634bf3582267f1610c">sam/trading_sim/cpp</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="sam/trading_sim/"/>
+  </compounddef>
+</doxygen>

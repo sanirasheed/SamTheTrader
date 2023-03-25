@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="data__transform_8h" kind="file" language="C++">
+    <compoundname>data_transform.h</compoundname>
+    <includes local="yes">common/namespace.h</includes>
+    <includes local="yes">memory</includes>
+    <includedby refid="aggregates_8h" local="yes">sam/trading_sim/cpp/src/transforms/aggregates.h</includedby>
+    <includedby refid="registry_8h" local="yes">sam/trading_sim/cpp/src/transforms/registry.h</includedby>
+    <includedby refid="ta__model_8h" local="yes">sam/trading_sim/cpp/src/transforms/ta_model.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>sam/trading_sim/cpp/src/transforms/data_transform.h</label>
+        <link refid="data__transform_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>common/namespace.h</label>
+      </node>
+      <node id="3">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>sam/trading_sim/cpp/src/transforms/aggregates.h</label>
+        <link refid="aggregates_8h_source"/>
+      </node>
+      <node id="4">
+        <label>sam/trading_sim/cpp/src/transforms/fib_retrace.h</label>
+        <link refid="fib__retrace_8h_source"/>
+      </node>
+      <node id="1">
+        <label>sam/trading_sim/cpp/src/transforms/data_transform.h</label>
+        <link refid="data__transform_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sam/trading_sim/cpp/src/transforms/ta_model.h</label>
+        <link refid="ta__model_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sam/trading_sim/cpp/src/transforms/registry.h</label>
+        <link refid="registry_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structsam__trader_1_1transform_1_1DataTransform" prot="public">sam_trader::transform::DataTransform</innerclass>
+    <innernamespace refid="namespacepd">pd</innernamespace>
+    <innernamespace refid="namespacesam__trader">sam_trader</innernamespace>
+    <innernamespace refid="namespacesam__trader_1_1transform">sam_trader::transform</innernamespace>
+    <briefdescription>
+<para>Contains the definition of the DataTransform class and related types. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>dewe<sp/>on<sp/>1/8/23.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;common/namespace.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;memory&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">pd<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">DataFrame;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">sam_trader::transform<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="structsam__trader_1_1transform_1_1DataTransform" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsam__trader_1_1transform_1_1DataTransform" kindref="compound">DataTransform</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="structsam__trader_1_1transform_1_1DataTransform_1afd9e66336e4540df559defb09edc666c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsam__trader_1_1transform_1_1DataTransform_1afd9e66336e4540df559defb09edc666c" kindref="member">DataTransform</ref>(BarColumns<sp/>prices,<sp/>ColumnPrefix<sp/>config)<sp/>:<sp/>m_barColumns(std::move(prices)),<sp/>config(std::move(config))</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structsam__trader_1_1transform_1_1DataTransform_1a6ac28c25740d6b48f4ec1088058f15b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>pd::DataFrame<sp/><ref refid="structsam__trader_1_1transform_1_1DataTransform_1a6ac28c25740d6b48f4ec1088058f15b2" kindref="member">transform</ref>(pd::DataFrame<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="structsam__trader_1_1transform_1_1DataTransform_1af128f95200252af338b4b304b535107f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="structsam__trader_1_1transform_1_1DataTransform_1af128f95200252af338b4b304b535107f" kindref="member">getOutputNames</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="structsam__trader_1_1transform_1_1DataTransform_1a9eeabb1e26852814513a52bf1490fe06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structsam__trader_1_1transform_1_1DataTransform_1a9eeabb1e26852814513a52bf1490fe06" kindref="member">~DataTransform</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="structsam__trader_1_1transform_1_1DataTransform_1a05e09f3b043dcfb8baf977b32b627e4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structsam__trader_1_1transform_1_1DataTransform_1a05e09f3b043dcfb8baf977b32b627e4a" kindref="member">Ptr</ref><sp/>=<sp/>std::unique_ptr&lt;DataTransform&gt;;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>BarColumns<sp/>m_barColumns;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>ColumnPrefix<sp/>config;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="data__transform_8h_1a18a7bbf3d8a6fc863cbcbe8f26c17be7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="data__transform_8h_1a18a7bbf3d8a6fc863cbcbe8f26c17be7" kindref="member">DataTransformList</ref><sp/>=<sp/>std::vector&lt;DataTransform::Ptr&gt;;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sam_trader::transform</highlight></codeline>
+    </programlisting>
+    <location file="sam/trading_sim/cpp/src/transforms/data_transform.h"/>
+  </compounddef>
+</doxygen>

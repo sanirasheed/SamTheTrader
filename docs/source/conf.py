@@ -34,7 +34,7 @@ release = '0.1'
 extensions = ["sphinx_copybutton","breathe"]
 
 breathe_projects = {
-    "myproject": "../docs/DoxygenXML/",
+    "myproject": "../docs/doxygenXML/",
 }
 breathe_default_project = "myproject"
 

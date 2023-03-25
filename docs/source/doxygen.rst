@@ -2,5 +2,5 @@
    :project: S.A.M
    :version: 0.1
    :repo: https://github.com/sanirasheed/SamTheTrader
-   :path: ../../doxygenXML/
+   :path: ../docs/doxygenXML/
    :maxdepth: 2

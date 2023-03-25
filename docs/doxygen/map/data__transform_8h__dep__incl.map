@@ -1,7 +1,0 @@
-<map id="sam/trading_sim/cpp/src/transforms/data_transform.h" name="sam/trading_sim/cpp/src/transforms/data_transform.h">
-<area shape="rect" id="node1" title="Contains the definition of the DataTransform class and related types." alt="" coords="252,5,411,61"/>
-<area shape="rect" id="node2" href="$aggregates_8h_source.html" title=" " alt="" coords="5,109,215,151"/>
-<area shape="rect" id="node3" href="$registry_8h.html" title="Contains definitions for the Transform Registry." alt="" coords="239,109,423,151"/>
-<area shape="rect" id="node5" href="$ta__model_8h_source.html" title=" " alt="" coords="447,109,645,151"/>
-<area shape="rect" id="node4" href="$fib__retrace_8h_source.html" title=" " alt="" coords="359,199,517,255"/>
-</map>

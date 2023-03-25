@@ -1,6 +1,0 @@
-<map id="sam_trader::transform::DataTransform" name="sam_trader::transform::DataTransform">
-<area shape="rect" id="node1" title="An abstract base class representing a data transform operation." alt="" coords="5,71,173,112"/>
-<area shape="rect" id="node2" href="$classsam__trader_1_1transform_1_1AggregateDataTransform.html" title="Class for aggregating financial data by a desired time span." alt="" coords="221,5,415,47"/>
-<area shape="rect" id="node3" href="$structsam__trader_1_1transform_1_1FibRetracementModel.html" title=" " alt="" coords="231,71,405,112"/>
-<area shape="rect" id="node4" href="$classsam__trader_1_1transform_1_1TAModel.html" title=" " alt="" coords="234,136,402,177"/>
-</map>

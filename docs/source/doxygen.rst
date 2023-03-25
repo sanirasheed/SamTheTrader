@@ -2,5 +2,5 @@
    :project: MyProject
    :version: 1.0
    :repo: https://github.com/sanirasheed/SamTheTrader
-   :path: ../DoxygenXML/xml/
+   :path: ../doxygenXML/
    :maxdepth: 2

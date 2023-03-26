@@ -7,31 +7,6 @@ Welcome to S.A.M documentation!
 ============================================
 Sam is an AI trader that uses deep reinforcement learning with behavioral cloning to trade different securities!
 
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Gym:
-
-   Gym
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Deep learning:
-
-   Deep learning
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Deep Reinforcement Learning:
-
-   Deep Reinforcement Learning
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Tuner:
-
-   Tuner
-
 .. toctree::
    :maxdepth: 2
    :caption: Doxygen Documentation:

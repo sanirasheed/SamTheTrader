@@ -34,7 +34,7 @@ release = '0.1'
 extensions = ["sphinx_copybutton","breathe"]
 
 breathe_projects = {
-    "S.A.M": "/Users/sani/SamTheTrader/docs/doxygenXML/"
+    "S.A.M": "../doxygenXML/"
 
 
 }
